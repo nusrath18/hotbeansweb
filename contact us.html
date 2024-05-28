@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hot BeansWeb</title>
+    <link rel="stylesheet" href="styles.css">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+</style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="regsiter.html">Registration</a></li>
+                <li><a href="contact us.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="title-section">
+        <div class="scrolling-title"><img src="title.png" width="666" height="220" alt=""/></div>
+    </div>
+    <main>
+        <div class="content">
+            <h1>Contact Us</h1>
+          <p><strong>London Office</strong></p>
+          <p><strong>Address:</strong></p>
+          <p>Hot BeansWeb<br>
+            123 London Street<br>
+            London, UK<br>
+            WC1X 0AA</p>
+          <p><strong>Phone:</strong><br>
+            Main: +44 (0)20 1234 5678<br>
+            Sales Enquiries: +44 (0)20 1234 5679<br>
+          Customer Support: +44 (0)20 1234 5680</p>
+          <p><strong>Email:</strong><br>
+            General Inquiries: <a target="_new" rel="noreferrer">info.london@hotbeans.com</a><br>
+            Sales: <a target="_new" rel="noreferrer">sales.london@hotbeans.com</a><br>
+            Support: <a target="_new" rel="noreferrer">support.london@hotbeans.com</a></p>
+          <p><strong>Opening Hours:</strong><br>
+            Monday - Friday: 9:00 AM - 6:00 PM<br>
+            Saturday: 10:00 AM - 4:00 PM<br>
+            Sunday: Closed</p>
+          <p><strong>Public Transportation:</strong><br>
+            Nearest Tube Station: London Underground - Holborn Station (Central and Piccadilly lines)<br>
+            Bus Routes: 55, 243, 38, 19</p>
+          <p><strong>Parking:</strong><br>
+            Limited street parking available nearby.<br>
+            Paid parking garages within walking distance.</p>
+          <p><strong>Map:</strong> <a href="https://www.google.co.uk/maps" target="_blank" rel="noreferrer">Link to Google Maps</a></p>
+        </div>
+    </main>
+    <footer>
+        <ul>
+            <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
+            <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
+            <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
+        </ul>
+    </footer>
+</body>
+</html>

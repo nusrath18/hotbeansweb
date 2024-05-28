@@ -1,0 +1,158 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgba(128, 128, 128, 0.2);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: black;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    animation: flash 5s infinite;
+}
+
+nav ul li:nth-child(1) a {
+    animation-delay: 0s;
+}
+
+nav ul li:nth-child(2) a {
+    animation-delay: 1s;
+}
+
+nav ul li:nth-child(3) a {
+    animation-delay: 2s;
+}
+
+nav ul li:nth-child(4) a {
+    animation-delay: 3s;
+}
+
+nav ul li:nth-child(5) a {
+    animation-delay: 4s;
+}
+
+@keyframes flash {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+}
+
+.title-section {
+    background-color: #FFFFFF;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.scrolling-title {
+    font-size: 6em;
+    color: black;
+    font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 20px;
+	overflow: scroll;
+}
+
+.content {
+    width: 60%;
+    overflow-y: auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.team {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 50px auto;
+}
+
+.team-member {
+    text-align: center;
+    margin-bottom: 30px;
+    width: 30%;
+}
+
+.team-member img {
+    width: 100%;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.team-member h3 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.team-member p {
+    margin: 0;
+    color: #666;
+}
+
+.members-text  h2 { 
+text-align: center;
+	font-weight: bold;
+	font-size: 35px;
+}
+
+footer {
+    background-color: black;
+    color: silver;
+    padding: 10px 0;
+    text-align: center;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+footer ul li {
+    margin: 0 15px;
+}
+
+footer ul li a {
+    color: silver;
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
+}
